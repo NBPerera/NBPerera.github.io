@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NB-Perera</title>
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link href="stylearnu.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/icons/littleLogo.png"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  	    <!--- colapse -->
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style>
+  
+
+</head>
+<body>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+
+
+<header>
+    <div id="header-inner">
+        <a href="index.html" class="logo"> <img src="img/icons/logo.PNG"> </a>
+        <p id="page-owner"> Nicky Brian Perera </p>
+        <nav>
+           <a href="#" id="menu-icon"> </a>
+           <ul id="menu"> <!--- unordered list-->
+               <li><a class="top" href="#research">Projects</a> </li>
+               <li><a class="top" href="#contacts">Contacts</a> </li>
+           </ul>
+           
+        </nav>
+        
+    </div>
+</header>
+<div class="clearfix"></div>
+        
+    <!--- Introduction to Ethno -->
+    <div class="inner-wrapper-ethno">
+    <h1> ARNU: Augmented Reality for Nottingham University</h1>
+        <h2> Abstract </h2>
+        <p> The problem that the following report is addressing is the lack of IoT technologies used within a Smart Campus. Particularly, novel tools that are designed to enhance the experience within the campus. The paper addresses the problem, by conducting a research and implementing a new software for University of Nottingham, which exploits the use of Augmented Reality(AR). The report includes the description of the research techniques used, analysis of the results, prototypes created and the result product. What was found is that the technology captivated the user’ s attention, by providing an unseen approach for navigation. Nevertheless, including such novel technology required a more extensive research of AR design. The latter has shown not to have any recognised framework, although few attempts were made. The report has given few different adjustments to what is already known, through the user’s feedback. Finally, a broader research is required to portray a design framework for this new exciting technology.</p>
+        <h2> How Was The Research Carried Out</h2>
+        
+         <div >
+        <h3> Initial Requirements Gathering: Literature Review</h3>
+        <p> Before involving the public in the study, I required a good understanding of the project, hence the literature review. The literature review first explored what is meant for smart campus. The latter has shown to be a very broad topic, which revealed to be predominately concerning environment. Nevertheless, the concept of Smart Campus is vast, and a variety of available technologies are yet to be deployed in campuses. Few universities have taken the initiative of using new technologies to facilitate everyday tasks. Examples are The Deakin University in Australia, in UK there are different examples such as Glasgow University, Manchester University, and Nottingham University. Nevertheless, the use of AR technologies is never mentioned apart from the Deakin University and Khalifa University. <br>
+        Augmented Reality (AR) is still a novel technology and according to the hype circle of emerging technologies[1], it has not found yet its place on the market. This project aims to provide a new innovative and easy to use tool that enhances the experience within the Campus, more specifically for the Jubilee Campus in University of Nottingham. For instance, a more intuitive navigation system in campus and indoors, and quick information retrieval using the camera. This is achieved by revisiting existing applications and theories, which combined aims to improve Effectiveness and Efficiency of the application, and Satisfaction of the Users. These are the three key components that defines Usability [2].<br>
+        The review proceeds with a basic understanding of what is meant by Augmented Reality (AR), and how the latter have changed the use and design of applications in different sectors, such as Gaming, Chatting, and/or productivity. After the topic has been viewed in different contexts, the research explore applications and papers more relevant to the project. A great example is set from the Khalifa University, where three researches presented a project called CAViAR[3](Context Aware Visual Indoor Augmented Reality). Together with CAViAR, other applications worth mentioning are ARcorfu (AR tourism guide)[4], ARquake (AR game within a Uni campus)[5], and an In-situ content authoring application [6](An augmented reality app that updates its database thanks to users contribution). These papers were selected among other 10 different applications, because their content provided a contribution for the realization of this project. Each application was compared and discussed on their strong and weak points. At a first glance, these applications may look very different from each other, nevertheless the literature review highlighted how some technicalities and design features are followed by many. Interestingly in one paper, researchers from three different universities, took a similar reviewing approach, and the outcome is a framework of 5 design principles[4]. These are briefly discussed and commented on how important they are for this project. <br>
+        Finally the literature review summarized what has been discussed, what has been achieved by reviewing the papers, and how this have influenced the development of the project realization. 
+        </p>
+        </div>
+        <h3> The Requirements Document Iteration Model </h3>
+        <p>Gathering requirements is a process that iterates throughout the realisation of a project. Therefore, the document was written and edited a plurality of times. The initial strategy to gather a first set of requirements was done through a literature research and introspective thinking. Once the idea of the project has taken a more defined shape, a first interview was made to better gauge the requirements had so far. These were used to design a first paper prototype, which has later been used for the first focus group. The information of the latter, were recorded through notes and video, and later evaluated to form a new and more extensive list of requirements. The result of the this newly created list, formed a prototype of higher fidelity (mid-fidelity prototype), which was used for the second focus group. The result of this second iteration, provided a more robust requirements list. No more iterations were done due to time constraints, nonetheless a last requirement gathering was performed finally with the use of a usability testing. The following is a recap of the two iterations schemes used.</p>
+        <ul >
+            <li class="split"><figure><img src="img/pics/user%20study%20iterations.png">
+            <figcaption> User Research Iterations</figcaption></figure></li>
+            <li class="split"><figure><img src="img/pics/usasbility%20testing%20iterative.png">
+            <figcaption> Usability Testing Iterations</figcaption></figure></li>
+        </ul>
+        <div class="clearfix"></div>
+        
+        <h3> Interviews </h3>
+        
+        <p> This was an informal, face to face chat. The people interviewed were known to the researcher, and have either passion/curiosity about the newest technologies or have of experience in the field to a certain extent. The person interviewed could be describe as a creative type of person. This is an important quality, because creative people tend to think out of the box and therefore provide interesting ideas and alternative solutions. This revealed to be true, during the interview the participant showed interest in a navigation feature which does not require an address but the location of the friend. At this stage, no prototype was available to the participant, and resulted to be more confusing for the interviewee to fully understand the possibilities of this project. This first interview did not provide further requirements, nevertheless it helped structuring the upcoming focus groups.</p>
+        
+        <h3> Focus Groups </h3>
+        
+        <p> Due to time constraints, only 2 iterations of focus group were made. Nevertheless, a large number of ideas and issues were raised, which allowed to have a clearer view of user requirements. The participants chosen, have different educational backgrounds, different interests, and different priorities. This Differences were a key factor to extrapolate the most from a single session, and grasp an understanding of differences between users and their personal requirement priorities. 
+        The focus groups were structured in similar ways but with different activities. The beginning of each study, required the participant to read the information sheet and fill the consent forms (which were accepted by the ethics department). </p>
+        <section class="split">
+           <h4> Focus Group 1</h4>
+           <input type="checkbox" class="read-more-state" id="post-1" />
+           <ul class="read-more-wrap" id="focuslist">
+               <li> Participants: Students with different majors with strong interest in upcoming technologies</li>
+               <li> Activity 1: Conversation on how university tasks are currently undertaken</li>
+               <li> Introduction: A short description of the project and how they relate to problems emerged to their previous discussion</li>
+               <li> Activity 2: Discussion on how the shortcomings raised on activity 1 can be improved with AR.</li>
+               <li> Activity 3: Feedback of <a href="#lowfid">Low-Fidelity Prototype</a> </li>
+               <li id="readmore" class="read-more-target"> During the first focused group, the participants were not told what was the project about, apart from it being a software. This was made in purpose, to understand how users tackle the tasks that the project is trying to ease. Broad questions were made to collect information regarding, how the participants retrieve information about their university while in campus, and how they navigate within it. This approach helped identifying issues in performing these activities with the current technologies. For example, the difficulty to map the real world with the online maps (i.e. understanding the orientation given in the online map), was a shared problem among all participants. Once different problems were noted, the focus group continued with the description of what the project is. The same questions were made, but adapted to the project (e.g. “how would you retrieve information using AR?”). The participants found difficult to answer these questions, as they had no experience with AR technology. Therefore, the moderator provided examples, which instigated a good discussion among the participants. The last part of the focus group, accounted the use of a low fidelity prototype. The latter demonstrated to be not explanatory enough, as the participants seemed to be perplexed (video recording as capture their reactions to the prototype). Consequently, the coordinator decided to mimic the use of such prototype, and the participant immediately understood its use. Both positive and negative response was gathered, and important suggestions and changes were suggested. Many requirements concerning the interface were arisen, few were specific to the looks other to the ease of use. For instance, the project originally had the device held horizontally, instead the user study revealed the preference towards a vertical hold of the phone.</li>
+           </ul>
+           <label for="post-1" class="read-more-trigger"></label>
+          
+            
+        </section>
+        
+        <section class="split">
+            <h4> Focus Group 2</h4>
+            <input type="checkbox" class="read-more-state" id="post-2" />
+            <ul class="read-more-wrap" id="focuslist">
+               <li> Participants: students with expertise in Human-Computer Interaction and Mixed Reality</li>
+               <li> Introduction: description of the project aim, the possible functionalities and structure of focus group </li>
+               <li> Activity 1: Feedback on paper printed <a href="#midfid">Mid-Fidelity Prototype </a> </li>
+               <li> Activity 2: Name the different icons encountered in the interface</li>
+               <li> Activity 3: Discussion on all issues raised </li>
+               <li> Activity 4: Requirements prioritization (MoSCoW)</li>
+               <li id="readmore" class="read-more-target"> The second focus group, has taken a slightly different approach from the first one. Soon after the ethics forms were filled, the participant were given a short project description and its main functionalities. After a few minutes, the participants were given the possibility to ask questions and clarify any doubts. The participants chosen for this focus group, are all experienced users of mixed reality technologies and students pursuing masters in HCI. Nevertheless, the uniqueness of each participant was maintained, as each participant had a different educational background. Examples of backgrounds are UG in psychology, computing, software engineering, design and IT technologies. This allowed still to gather different perspectives, even though students of the same course. The result of having HCI students, showed a more critical view of the project, and the discussions did not need require the researcher to act as a moderator. Once the project was clear to all the participants, they were given a first activity with the use of a <a href="#midifd">mid-fidelity prototype</a>. The use of the prototype greatly aid to rediscover the interface. The participants could find important issues, such as inconsistency, flexibility and aesthetics of the design. This is because all the participants were familiar to the “Nielson design principles”, mental workload, and other design characteristics that were studied earlier in the semesters. After each participant took notes on the paper prototype, they were then asked to complete a second activity, and a second sheet of paper containing the symbols used in the prototype were delivered to the participants. Here the later were asked to identify / comment each symbol in less than 2 minutes. The time constraint was necessary, to gather information on the intuitiveness of the symbols used. The activity revealed how 5 of the 16 symbols used, created some misunderstanding. Subsequently, a 10 to 15 min slot was assigned to open discussion and reflection on the activities done so far. This provided the research with many ideas, issues, and requirements. More importantly, it covered a wide range of topics such as: privacy, technicality, design, and more. Once the discussion found its conclusion, a last short activity was given. A third and last activity was undertaken by the participants, where they were asked to set a development priority on the list of requirements. The range of priorities were from 1 to 4, where 1 is highest priority and 4 the lowest or with the use of the MoSCoW rule (i.e. Must, Should, Could, Would/ Won’t). This provided the research with good insights on which features should be prioritized among others. Overall the focus group had a strong impact in the development and design choices of the project.</li>
+            </ul>
+           <label for="post-2" class="read-more-trigger"></label>
+        </section>
+            <div class="clearfix"></div>
+
+    <h3>Interface Prototypes</h3>
+        <p> The research was carried out with the use of Four prototypes. Each of them contributed to the final result in different ways. The first prototype, was merely a sketch which was designed to completely redesigned after the user's feedback. Its purpose was to portray the idea to the users. The Second Prototype was the result of what was extrapolated from the user research (i.e. <a href="#interview">Interview</a> and <a href="#focusgroup">Focus Group 1</a>). It was done using a Adobe creative program and it represented an enhanced wireframe prototype. The third and last interface prototype was done with the use of InVision. The latter was created with updated screens derived from Focus Group 2, and made interactive to the users.  </p>
+    <section>
+        <h4>Low-Fidelity Prototype / Paper Sketch</h4>
+        <p> This was used in the first focus group, so that the participants had a better understanding of what was the software to implement. The effortless sketch gave the participants the confidence to freely suggest features, changes, and methodology of use, which were not considered in the initial design. For example, using the product with the device held vertically, as more ergonomically comfortable; including separate modes to handle the different features; utilizing a crosshair to lock augmentable targets and reveal its content and more. The use of this prototype, defined what is now the skeleton of the product. </p>
+        <figure><img class="low" src="img/pics/first%20prototype.jpg"><figcaption> Sketch on paper</figcaption></figure>
+    </section>       
+    <div class="clearfix"></div>
+    <section>
+        <h4> Mid-Fidelity Prototype </h4>
+        <p> This was printed on paper and provided to the participants of the second focus group. The prototype consists of the main flows when using the application. The design of the prototype was done with the use of Adobe CC Comp, which is a tool available for IOS devices (this research used an iPad Pro).
+        To create the mid-fidelity prototype, a research on modern minimalist design was carried out. The result of this, was few tips on symbols, colour schemes, consistency and more. Furthermore, the prototype tried to satisfy as much as possible all the requirements gathered so far from the previous user study (i.e. interview and focus group 1). </p>
+        <ul >
+            <li class="split"><figure><img src="img/pics/proto1.svg">
+            <figcaption> First page</figcaption></figure></li>
+            <li class="split"><figure><img src="img/pics/proto.svg">
+            <figcaption> Second page</figcaption></figure></li>
+        </ul>
+         <p>
+          The use of this prototype had a great impact on the project. The participants had identified a multitude of mistakes on the prototype which gave the research the possibility to collect information on its design and deliver a more sophisticated prototype for the usability testing (Mid-High-fidelity prototype). Not only the prototype helped identifying issues with the interface, but also made the researcher aware of considerations not taken in account earlier. For example, clear option to manage user’s privacy, regarding especially the visibility on the map; connections to social networks to sync friends and appointments; having a third mode (currently the application provides navigation mode and discover mode) only suited for campus tour, which would be handed to campus visitors (e.g. during open days). The changes were taken very much in consideration and the following are screen examples of the before and after.  </p>
+        
+    </section>    
+        
+    <div class="clearfix"></div>
+    <section>
+        <h4> Mid/high -Fidelity Prototype </h4>    
+        <p>Firstly, a brief definition of the term “Mid-High-Fidelity” is due, as it is not an existing type of prototype. Different definitions of high-fidelity prototypes are available, and none would classify this prototype as high-fidelity. Nevertheless, definitions of Mid-Fidelity prototypes are mixed, and again do not really defining this prototype. Therefore, Mid-High-Fidelity would be a transition between the two. Large part of the interface is clickable and resembles the final product very much, nonetheless the main features are made available externally (i.e. “indoor navigation” and “information at a glance”), as separated apps. <br> 
+        This version included the amendments and feedback of the participants from the previous focus group.The updated interface screens were then used to create a dynamic prototype with the use of InVision, a largely used prototyping tool. The participants used the mock interface created while being recorded, and their comments were noted. The participants were the same of the previous focus group, and they were pleased on seeing the changes they advised. Furthermore, InVision also enables the use of gestures such as swiping, which was ideal for this project application, as ARNU’s interface was mainly designed with those gestures to navigate. After the use of this prototype it emerged that: some users still struggled with the icons, as they result to be not clear enough; the placements of the features in the menu, were not always trivial; the menu resulted at times to be nested too much, which led the user lost in the application. Therefore, further user studies on the interface should be performed to guarantee a discreet result.  </p>
+         <ul >
+            <li class="split"><figure><img class="fancybox" src="img/pics/arnu/loginflow.png" title="Interface flow for login/signup">
+            <figcaption> Interface flow for login/signup</figcaption></figure></li>
+            <li class="split"><figure><img class="fancybox" src="img/pics/arnu/fullflow.png" title="Interface flow after login">
+            <figcaption> Interface flow after login </figcaption></figure></li>
+        </ul>
+    </section>
+            <div class="clearfix"></div>
+
+       
+        <h3> Usability Testing</h3>
+        
+        <p> The testing for the system was done on a group of 6 participants, which participated in 2 separate usability testing (only four participated in the second one). One was designed to assess the Interface implemented, and the other to test the performance and interface of the indoor navigation feature. The participants chosen, were selected according to their knowledge on User Experience, in specific Master students majoring in Human Computer Interaction (except the two people who participate in the second study). Majority of the participants in this testing, had collaborated in the previous user study (i.e. the 2nd focus groups). Each testing had a separate number of tasks, which were evaluated on the five components of usability testing[28]: </p>
+        <ul id="focuslist">
+           <li> Learnability: How easy is it for users to accomplish basic tasks the first time they encounter the design? </li>
+           <li> Efficiency: Once users have learned the design, how quickly can they perform tasks?</li>
+           <li> Memorability: When users return to the design after a period of not using it, how easily can they re-establish proficiency?</li>
+           <li> Errors: How many errors do users make, how severe are these errors, and how easily can they recover from the errors?</li>
+           <li> Satisfaction: How pleasant is it to use the design?</li>  
+        </ul>
+        <h4> Interface </h4>
+        <p> The testing was carried out with the 6 participants at the same time. This was done on their laptops, and connected to the InVision website. The prototype created for the research, was then shared to the participants. Prior to any task, they were explained the purpose of this study and what were the roles they were assuming (i.e. User Experience experts). After the ethical forms were compiled, the researcher described the structure of the testing. The testing was divided in two identical sessions (15 min each), which were split in two consecutive days. The latter was ideal for analysing the application Memorability. 
+The participants were appointed with 3 different tasks: select mode to open maps in discover mode and label what seen; add a friend; add an appointment. Each task was timed, and each participant time was noted. Once all participants concluded the task, a discussion was raised by the study moderator (i.e. the researcher). The feedback was noted according to the 5 different components (apart from Memorability which was only noted after the second session).
+</p>
+      <h4> Indoor Navigation</h4>
+      <p> The testing was performed with one participant at a time. Each session lasted around 15 to 20 minutes. Prior to any task, the participant was explained the purpose of this study and what is the role he/she is assuming (i.e. User Experience expert). After the ethical forms were compiled, the researcher described the structure of the testing. The participant would decide a starting location within the Amenities Building in Jubilee Campus. The application has only mapped the first floor, therefore the user had a restricted testing area. Once the user had decided her/his location, the user could open the application. The moderator, according to the current location, told the participant to guide to a specific room using the app. The participant was requested to speak out loud thoughts and actions, to permit the developer to follow his/her line of thought. Once the participant had reached the destination the task is complete, and a short interview was consequently performed. Finally two more participants were recruited to complete the same task, without the use of the application, in order to have a comparative evaluation between having and not having the software. </p>
+       
+        <div class="clearfix"></div>
+  
+       <h4> For more information on the project, please don't hesitate to contact me.</h4>
+        
+    </div>
+
+        
+
+    <!--- footer staff-->
+    <div class="clearfix"></div>
+     <footer>
+        <div id="footer-inner">
+        <a name="contacts"></a>
+        <h2> Contacts </h2>
+        <ul class="footercontact">
+            <li><i id="p" class="fa fa-phone" aria-hidden="true"></i>: +44 7472357157 </li>
+            <li><i id="e" class="fa fa-envelope" aria-hidden="true"></i>: perera.nicky.brian@gmail.com </li>
+            <li><i id="l"class="fa fa-map-marker" aria-hidden="true"></i>: London, United Kingdom </li>
+        </ul>
+        <div class="footersocial">
+           
+            <a href="https://www.linkedin.com/in/nicky-b-perera/" target="_blank"><img src="img/icons/icons8-linkedin.png"> </a>
+            <a href="https://www.linkedin.com/in/nicky-b-perera/" target="_blank"><img src="img/icons/icons8-google-plus.png"> </a>
+        </div>            
+        </div>
+    </footer>
+    <div class="clearfix"></div>
+    <footer class="second">
+        <p> &copy; NBPerera, 2017</p>
+    </footer>
+
+</body>
+</html>
