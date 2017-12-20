@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+body {
+    color: #555;
+    text-align: justify; 
+    font-size: 13px;
+    font-family: 'Roboto Condensed','Open Sans', sans-serif;
+    line-height: 190%; 
+    
+}
+h3  {
+    font-size: 160%;
+    padding: 3% 0;
+    text-align: center;
+        font-family: 'Roboto Condensed','Open Sans', sans-serif;
+
+}
+h4  {
+    font-size: 100%;
+    padding: 1% 0;
+    text-align: center;
+    font-family: 'Roboto Condensed','Open Sans', sans-serif;
+
+}
+h2  {
+    font-size: 80%;
+    padding: 3% 0;
+    text-align: center;
+    font-family: 'Roboto Condensed','Open Sans', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 400%;
+    font-weight: bolder;
+        font-family: 'Roboto Condensed','Open Sans', sans-serif;
+
+    font-family:  serif;
+    
+    
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+
+header{
+    background: #17202A;
+    height: 86px;
+    position: fixed;
+    z-index:1000;
+    width: 100%;
+    opacity: .95;
+    top: 0;
+    
+}
+
+#header-inner {
+ 
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    max-height: 60px;
+    width: 75px;
+    padding: 20px;
+    
+}
+
+#page-owner{
+    float: left;
+    font-size: 130%;
+    padding: 35px 0 ;
+    color: white;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+nav{
+    float: right;
+    padding: 25px 50px 0 0;
+}
+
+#menu-icon{
+    
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul li {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding: 10px;
+    float: left;
+    font-size: 110%
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    color: green;
+    text-decoration-line: underline;
+    
+}
+.current {
+    color: greenyellow;
+    text-decoration-line: underline;
+    font-weight: 1000;
+}
+
+/*--- start slider --*/
+.slider{
+   
+    margin-top: 90px;
+}
+.bx-controls{
+    display: none;
+}
+
+
+.bx-wrapper img{
+    width: 100%;
+    
+    margin: 0 auto;
+    
+    
+}
+
+/*--- Start Inner Wrapper --*/
+.inner-wrapper-research {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #17202A;
+    color: white;
+
+}
+
+#uxresearch{ 
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: white;
+
+} 
+
+
+
+#arnu {
+      -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+
+}
+
+#ethno {
+      -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+article {
+    float: left;
+    width: 50%;
+    padding:2%;
+}
+
+.article2{
+    float: left;
+    width: 39%;
+    padding: 2%;
+}
+
+.aside2{
+    float: right;
+    width: 50%;
+    padding:2%;
+    
+}
+aside {
+    float: right;
+    width: 39%;
+    padding: 2%;
+}
+
+
+.clearfix{
+    clear:both;
+    padding: 2%;
+    
+}
+#researchtitle{
+    position: relative;
+    top:70px;
+    text-align: center;
+}
+
+.detailsbutton{
+    width: 120px;
+    height: 35px;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+/*---- UX design --*/
+.inner-wrapper-designer {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #E67E22;
+    color: white;
+
+}
+
+#uxdesigner{ 
+    margin: 0 auto;
+    margin-top: 10px;
+
+    max-width: 1000px;
+    color: white;
+
+} 
+
+#designtitle{
+    position: relative;
+    top: -25px;
+    
+}
+
+/*---- UX coding --*/
+.inner-wrapper-coder {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #17202A;
+    color: white;
+   
+}
+
+
+#uxcoder{ 
+    margin-top: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: white;    
+} 
+
+#backgroundcode{
+   
+       background-image : linear-gradient(to top, rgba(0,0,0,0.8) 10%,rgba(23,32,42,1) 100%), url(img/pics/keyboarddell.jpg);
+
+
+    
+}
+
+#uxtitle{
+    position: relative;
+    top:-25px;
+    text-align: right;
+}
+
+
+/*---- footer inner --*/
+#footer-inner{
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+
+
+}
+
+.footercontact{
+    width: 50%;
+    float:left;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    
+}
+
+.footersocial{
+    padding-top: 50px;
+    float: right;
+}
+
+.fa fa-map-marker{
+    padding-left: 50px;s
+}
+#p{ padding-right: 6px;
+    margin-left: 2px;
+}
+#e{ padding-right: 5px;}
+#l{ padding-right: 9px;
+    margin-left: 3px;
+}
+
+.second{
+    text-align:center;
+}
+
