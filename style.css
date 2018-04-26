@@ -122,7 +122,8 @@ nav ul li a {
 }
 
 a{
-text-decoration: none;}
+text-decoration: none;
+color: white;}
 
 a:visited{color: white;}
 a:hover, a:active { text-decoration: none; color:#E67E22;}
