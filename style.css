@@ -116,16 +116,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color:white;
+    color:#ffffff;
     text-decoration: none;
     font-weight: 700;
 }
 
 a{
 text-decoration: none;
-color: white;}
+color: #ffffff;}
 
-a:visited{color: white;}
+a:visited{color: #ffffff;}
 a:hover, a:active { text-decoration: none; color:#E67E22;}
 .current {
     color: greenyellow;
